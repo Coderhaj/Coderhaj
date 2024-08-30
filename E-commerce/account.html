@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>//////// login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+               <h1>Sporty <img src="cloth.png" alt=""></h1>
+            </div>
+            <ul id="menuItems">
+                <li><a href=index.html>Home</a></li>
+                <li><a href=Product.html >Products</a></li>
+                <li><a href= >Abount</a></li>
+                <li><a href=>Contact</a></li>
+                <li><a href='account.html' >Account</a></li>
+            </ul>
+            <div>
+            <i class="ri-shopping-cart-fill" id="cart-icon" ><a href="cart.html"></a></i>
+            <i class="ri-menu-2-line"   id="menu-icon" onclick="menuToggle()"></i>
+        </div>
+        </nav>
+ 
+</div>
+<header>
+<div class="account-page">
+    <div class="row">
+        <div class="col-2">
+           <img src="draw.png" alt="" width='100%'>
+        </div>
+        <div class="col-2">
+            <div class="form-container">
+                 <div class="form-btn">
+                    <span onclick="loginForm()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="indicator">
+                 </div>
+                 <form class="loginForm">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="password" >
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forgot Password</a>
+                 </form>
+
+
+
+
+
+                 <form class="regForm">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="password" >
+                    <input type="email" placeholder="email">
+                    <button type="submit" class="btn">Register</button>
+                    
+                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                 <div class="footer-col-1">
+                    <h3>Downoald Our App</h3>
+                    <p>Downoald Our App by Android and Hwawi is mobile Phone</p>
+                    <div class="buttons">
+                    <div class="button">
+                        <img src="playStore.png" alt="">
+                        <div>
+                            <p>Play by</p>
+                            <h3>Google Play</h3>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <img src="apple.png" alt="">
+                        <div>
+                            <p>Play by</p>
+                            <h3>App Store</h3>
+                        </div>
+                        
+                    </div>
+                    </div>
+                 </div>
+                 <div class="footer-col-2">
+                    <div class="logo">
+                        <h1>Sporty <img src="cloth.png" alt=""></h1>
+                     </div>
+                    <p>Our purpose Is to Sustainbly Make the Pleasure and benefits of sport Accepility to the many</p>
+                 </div>
+                  <div class="footer-col-3">
+                     <h3>Useful Links</h3>
+                     <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                     </ul>
+                  </div>
+                  <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                       <li>Instagram</li>
+                       <li>Facebook</li>
+                       <li>Youtube</li>
+                       <li>Twitter</li>
+                    </ul>
+                 </div>
+               
+            </div>
+            <hr>
+            <p class="copyright">
+              copyright 2020 - Easy  Tuturials
+            </p>
+      </div>
+    
+</footer>
+<script>
+    var login =document.querySelector('.loginForm');
+    var reg =document.querySelector('.regForm');
+    var indicator=document.querySelector('#indicator');
+    
+    function loginForm(){
+      login.style.transform ="translateX(300px)";
+      reg.style.transform ="translateX(300px)"; 
+      indicator.style.transform="translateX(0)"
+    }
+    
+    function register(){
+      login.style.transform ="translateX(0px)";
+      reg.style.transform ="translateX(0px)"; 
+      indicator.style.transform="translateX(100px)"
+    } 
+</script>
+</body>
+</html>
